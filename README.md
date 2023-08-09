@@ -8,7 +8,7 @@
 ## Descripción
 
 Este proyecto está pensado para realizar una lista de súperheroes con su súperpoder, nivel y nombre del mismo, conectándolo con la API restful que se realizó con el mismo tema.
-Esta API rest esta ideada para trabajarla desde el framework Angular versión 16.1.6 <img src='image/Logo angular.png' alt='Logo Angular' width="70" height="40">
+Esta API rest esta ideada para trabajarla desde el framework Angular versión 16.1.6 <img src='image/Logo angular.png' alt='Logo Angular' width="70" height="30">
 
 ## Funcionalidades
 - Obtener los súperheroes.

@@ -1,5 +1,5 @@
 ## API rest de una lista de tareas
-<img src='image/todo-list.png' alt="To Do List" width="230" height="190">
+<img src='image/heroes.png' alt="Heroes" width="230" height="190">
 
 ### Autor: Marianny Márquez
 ### Prográmate Academy

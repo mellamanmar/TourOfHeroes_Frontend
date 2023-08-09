@@ -1,27 +1,45 @@
-# TourOfHeroes
+## API rest de una lista de tareas
+<img src='image/todo-list.png' alt="To Do List" width="230" height="190">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+### Autor: Marianny Márquez
+### Prográmate Academy
+<img src='image/programate.png' alt='Logo Prográmate' width="180" height="70">
 
-## Development server
+## Descripción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este proyecto está pensado para realizar una lista de súperheroes con su súperpoder, nivel y nombre del mismo, conectándolo con la API restful que se realizó con el mismo tema.
+Esta API rest esta ideada para trabajarla desde el framework Angular versión 16.1.6 <img src='image/Logo angular.png' alt='Logo Angular' width="50" height="40">
 
-## Code scaffolding
+## Funcionalidades
+- Obtener los súperheroes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pendientes
+- Obtener súperheroeseas por ID.
+- Obtener detalles de súperheroes.
+- Crear nuevos súperheroes.
+- Eliminar un súperheroes.
 
-## Build
+## Tecnologías utilizadas
+- JavaScript.
+- TypeScript.
+- HTML y CSS
+- Angular.
+- rxjs.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalación
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta el directorio del proyecto.
+3. Instala las dependencias necesarias para poder usar la API:
+    npm i cors rxjs
 
-## Running unit tests
+## Uso
+1. Inicia la aplicación, se deben abrir dos termianles
+node index.js ó npm run dev (Para el backend desde el repositorio de https://github.com/mellamanmar/TourOfHeroes_Backend/tree/main) 
+ng server (Para el frontend)
+2. Accede a la ruta del frontend http://localhost:4200 y así podrás consumir la API desde tu servidor local.
+3. Desde la ruta inicial puedes acceder al dashboard de la API.
+4. Desde la ruta http://localhost:4200/api/heroes se deben ver los héroes traídos desde el servidor backend, sin embargo se presenta un error de CORS el cual no permite continuar con la petición, este error esta pendiente a revisón.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### A tomar en cuenta
+Este proyecto no esta terminado ya que se presentaron dificultades al momento de conectar y trabajar con los datos del backend en el framework de angular.

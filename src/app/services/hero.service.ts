@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { Observable, of } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
-import { Hero } from './hero';
+import { Hero } from '../heroes/hero';
 import { MessageService } from './message.service';
 
 @Injectable({ providedIn: 'root' })
 export class HeroService {
 
-  private domain = 'http://localhost:3005/api/hero'
+  private domain = 'http://localhost:3005/api/heroes'
   constructor(
     private messageService: MessageService,
     private http : HttpClient) { }
@@ -16,6 +16,7 @@ export class HeroService {
   getHeroes(): Observable<Hero[]> {
     const heroes = this.http.get<Hero[]>(this.domain + '');
     this.messageService.add('HeroService: fetched heroes');
+    console.log(heroes)
     return heroes;
   }
 
